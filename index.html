@@ -316,7 +316,6 @@
             </div>         
         </section>
         
-        
         <!-- Sección Sobre Mí -->
 <section id="sobre-mi" class="py-20 md:py-28 lg:py-32 section-bg dark:bg-gray-900">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -329,11 +328,12 @@
                 <p class="text-lg text-secondary-600 dark:text-gray-300 max-w-3xl mx-auto px-4">Creo experiencias que no solo funcionan, sino que también cuentan historias y generan emociones.</p>
             </div>
             
-            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 animate-fade-in">
-                <div class="lg:w-2/5">                                                    
+            <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20 animate-fade-in">
+                <!-- Imagen con botón - Ocupa 40% en desktop -->
+                <div class="lg:w-2/5 relative mx-auto lg:mx-0">                                                    
                     <div class="relative flex justify-center"> 
                         <!-- Contenedor redondo de la imagen -->
-                        <div class="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-primary-600 dark:border-primary-400 shadow-lg">
+                        <div class="w-56 h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-primary-600 dark:border-primary-400 shadow-lg">
                             <img src="./assets/img/foto_perfil_2.webp"
                                alt="Aldair Sarmiento trabajando en equipo en un proyecto de desarrollo web"
                                class="w-full h-full object-cover"
@@ -341,30 +341,33 @@
                         </div>
                         
                         <!-- Botón de descargar CV - FUERA del contenedor redondo -->
-                        <div class="absolute -bottom-2 -right-2 sm:-bottom-3 sm:-right-3 md:-bottom-4 md:-right-4 lg:-bottom-6 lg:-right-6 bg-primary-100 dark:bg-primary-900 px-3 py-2 sm:px-4 sm:py-3 rounded-xl shadow-xl hover:scale-105 transition-transform duration-300 z-10">
+                        <div class="absolute -bottom-3 -right-3 lg:-bottom-4 lg:-right-4 bg-primary-100 dark:bg-primary-900 px-4 py-3 rounded-xl shadow-xl hover:scale-105 transition-transform duration-300 z-10">
                              <a href="./assets/img/CV_Aldair_Sarmiento.pdf"
-                                 class="flex items-center gap-2 sm:gap-3"
+                                 class="flex items-center gap-3"
                                  aria-label="Descargar currículum"
                                  download="CV_Aldair_Sarmiento.pdf">
-                                 <span class="text-xs sm:text-sm font-semibold text-primary-800 dark:text-primary-200">Descargar CV</span>
-                                 <i class="icon-download text-primary-800 dark:text-primary-200 text-xs sm:text-sm"></i>
+                                 <span class="text-sm font-semibold text-primary-800 dark:text-primary-200">Descargar CV</span>
+                                 <i class="icon-download text-primary-800 dark:text-primary-200"></i>
                              </a>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Contenido - Ocupa 60% en desktop -->
                 <div class="lg:w-3/5">
-                    <h3 class="text-2xl lg:text-3xl font-bold text-primary-800 dark:text-white mb-6">Mi Filosofía de Desarrollo</h3>
-                    <p class="text-secondary-700 dark:text-gray-300 mb-6 leading-relaxed">
-                        Creo que el desarrollo frontend va más allá de escribir código. Se trata de crear puentes entre la tecnología y las personas.
-                    </p>
-                    <p class="text-secondary-700 dark:text-gray-300 mb-8 lg:mb-10 leading-relaxed">
-                        Con más de 2 años de experiencia, he trabajado en proyectos que van desde startups innovadoras hasta empresas establecidas.
-                    </p>
+                    <div class="text-center lg:text-left">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-primary-800 dark:text-white mb-6">Mi Filosofía de Desarrollo</h3>
+                        <p class="text-secondary-700 dark:text-gray-300 mb-6 leading-relaxed">
+                            Creo que el desarrollo frontend va más allá de escribir código. Se trata de crear puentes entre la tecnología y las personas.
+                        </p>
+                        <p class="text-secondary-700 dark:text-gray-300 mb-8 lg:mb-10 leading-relaxed">
+                            Con más de 2 años de experiencia, he trabajado en proyectos que van desde startups innovadoras hasta empresas establecidas.
+                        </p>
+                    </div>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8 lg:mb-10">
-                        <div class="flex items-center space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
-                            <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0">
+                        <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
+                            <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0 mt-1">
                                 <i class="icon-lightbulb text-xl"></i>
                             </div>
                             <div>
@@ -373,8 +376,8 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-center space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
-                            <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0">
+                        <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
+                            <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0 mt-1">
                                 <i class="icon-users text-xl"></i>
                             </div>
                             <div>
@@ -383,8 +386,8 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-center space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
-                            <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0">
+                        <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
+                            <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0 mt-1">
                                 <i class="icon-gauge text-xl"></i>
                             </div>
                             <div>
@@ -393,8 +396,8 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-center space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
-                            <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0">
+                        <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
+                            <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0 mt-1">
                                 <i class="icon-universal-access text-xl"></i>
                             </div>
                             <div>
@@ -404,16 +407,18 @@
                         </div>
                     </div>
                     
-                    <a href="#contacto" class="inline-flex items-center text-primary-700 dark:text-primary-300 font-semibold hover:text-primary-800 dark:hover:text-primary-200 transition-colors group text-lg">
-                        <span>Hablemos sobre tu proyecto</span>
-                        <i class="icon-right-big ml-2 group-hover:translate-x-1 transition-transform"></i>
-                    </a>
+                    <div class="text-center lg:text-left">
+                        <a href="#contacto" class="inline-flex items-center text-primary-700 dark:text-primary-300 font-semibold hover:text-primary-800 dark:hover:text-primary-200 transition-colors group text-lg">
+                            <span>Hablemos sobre tu proyecto</span>
+                            <i class="icon-right-big ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-        
+
         
         <!-- Sección Proyectos -->
         <section id="proyectos" class="py-20 md:py-28 lg:py-32 bg-gradient-to-b from-white to-primary-50 dark:from-gray-900 dark:to-gray-800">
