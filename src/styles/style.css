@@ -4,7 +4,7 @@
         rgba(20, 184, 166, 0.9) 0%, 
         rgba(13, 148, 136, 0.9) 50%, 
         rgba(15, 118, 110, 0.9) 100%),
-        url('../../public/img/background-hero.webp');
+        url('../../assets/img/background-hero.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -273,4 +273,54 @@ img[loading="eager"] {
 *:focus-visible {
     outline: 2px solid #0d9488;
     outline-offset: 2px;
+}
+
+
+
+/* Mejoras específicas para móviles */
+@media (max-width: 640px) {
+    /* Ajustar hero section para móviles */
+    .hero-bg {
+        min-height: 90dvh;
+        padding: 2rem 0;
+    }
+    
+    /* Mejorar tamaño de texto en móviles */
+    h1 {
+        font-size: 2.5rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    /* Ajustar padding de contenedores */
+    .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Mejorar botones en móviles */
+    .wave-btn {
+        min-height: 48px; /* Tamaño mínimo táctil */
+    }
+    
+    /* Ajustar grid de proyectos para móviles */
+    .carousel-slide {
+        width: 100% !important;
+    }
+    
+    /* Mejorar formulario en móviles */
+    input, textarea, select {
+        font-size: 16px !important; /* Evita zoom en iOS */
+    }
+}
+
+/* Prevenir zoom no deseado en iOS */
+input[type="text"],
+input[type="email"],
+textarea {
+    font-size: 16px;
+}
+
+/* Mejorar rendimiento de scroll en móviles */
+html {
+    -webkit-overflow-scrolling: touch;
 }
